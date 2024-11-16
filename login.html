@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="assets/css/login.css">
+    <link rel="icon" type="image/x-icon" href="assets/img/OIP.jfif">
+
+    
+</head>
+<body>
+    <header>
+        <h1>Login</h1>
+    </header>
+    <div id="nome"></div>
+<div class="login-container"> 
+    
+    
+    <form onsubmit="redirecionar()" method="get" id="loginForm" action="interface_inicail.html">
+        
+        
+        <label for="email">Email:</label>
+        <input maxlength="45" placeholder="Insira um Email Valido" type="email" id="email" name="email" class="input-field" required>
+        <br>
+        
+        <label for="password">Senha:</label>
+        <input type="password" id="password" maxlength="8" placeholder="••••••••" name="password" class="input-field" required>
+        
+        
+        
+        
+        <br>
+        <a href="cadastro.html" class="forgot-password a"> Crie uma Conta </a>
+        <br>
+        <br>
+        <a href='cadastro.html'><button class="login-btn"  type="submit">Logar</button></a>
+        
+
+    </form>
+
+    <div id="loginMessage"></div>
+    
+</div>
+  
+    
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.46.1/dist/umd/supabase.min.js"></script>
+    <script src="assets/js/login.js"></script>
+    <footer>
+        <p>&copy; Todos os Direitos do site Reservados para Rafael Garrido e Mateus Borges</p>
+    </footer>
+</body>
+</html>

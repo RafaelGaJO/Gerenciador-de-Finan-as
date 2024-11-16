@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulação de Parcelamento e Controle de Dívidas</title>
+    <link rel="stylesheet" href="./assets/css/parcelaejuros.css">
+    <link rel="icon" type="image/x-icon" href="assets/img/OIP.jfif">
+</head>
+<body>
+    <header>
+        <h1>Controle de Parcelamento e Dívidas</h1>
+    </header>
+
+    <div class="container">
+       
+        <div class="input-form">
+            <input type="text" id="debtDescription" placeholder="Descrição da Dívida" required>
+            <input type="number" id="totalAmount" placeholder="Valor Total da Dívida (R$)" required>
+            <input type="number" id="numInstallments" placeholder="Número de Parcelas" required>
+            <button onclick="addDebt()">Adicionar Dívida</button>
+        </div>
+
+        
+        <div class="debt-list">
+            <h2>Parcelas Mensais:</h2>
+            <ul id="debtList"></ul>
+        </div>
+
+       
+        <div class="button-container">
+            <button onclick="window.location.href='interface_inicial.html'">Voltar ao Menu</button>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; Todos os Direitos do site Reservados para Rafael Garrido e Mateus Borges</p>
+    </footer>
+
+    <script src="./assets/js/parcelamento.js"></script>
+</body>
+</html>

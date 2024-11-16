@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Finanças Pessoais</title>
+    <link rel="stylesheet" href="assets/css/iterface.css">
+    
+    <link rel="icon" type="image/x-icon" href="assets/img/OIP.jfif">
+</head>
+<body>
+    <!-- <header class="login">
+        <a href='login.html'><button id="buttonlogin">Login</button></a>
+        <a href='cadastro.html'><button id="buttonlogin">Cadastro</button></a>
+    </header> -->
+    
+    <header>
+        <h1>Bem-vindo, <span id="userName"></span>!</h1>
+        <h1>Gerenciador de Finanças Pessoais</h1>
+    </header>
+
+    <div class="main-container">
+        <div class="botao-container">
+            <button onclick="window.location.href='limitedocartão.html'">Gerenciar Limite do Cartão</button>
+        </div>
+        
+        <div class="botao-container">
+            <button onclick="window.location.href='gerenciadordegastos.html'">Ir ao Gerenciador de Gastos</button>
+        </div>
+        <div class="botao-container">
+            <button onclick="window.location.href='parcelamento.html'">Calcular Parcelas</button>
+        </div>
+        <div class="botao-container">
+            <button onclick="window.location.href='juros.html'">Calcular Juros Composto</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; Todos os Direitos do site Reservados para Rafael Garrido e Mateus Borges</p>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./assets/js/interfaceinicial.js"></script>
+</body>
+</html>
