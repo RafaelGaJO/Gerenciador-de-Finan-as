@@ -17,7 +17,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
 
 
 
-const supabasePublicClient=supabase.createClient("https://vrguayypljtcouzusomj.supabase.co","eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZyZ3VheXlwbGp0Y291enVzb21qIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzA3MjYyMjgsImV4cCI6MjA0NjMwMjIyOH0.b0Dk8Ne8cdrKopCkE980e9KZwvTpHXeaJ8RlQ-LP568")
+const supabasePublicClient=supabase.createClient("url","key")
 
 async function pegarbanco(){
     const response= await supabasePublicClient.from("usuarios").select("*")
@@ -90,6 +90,7 @@ document.getElementById('loginForm').addEventListener('submit', async function(e
         window.location.href = 'login.html';
     }
 });
+
 
 
 
