@@ -65,7 +65,7 @@ function updateChart() {
 }
 
 
-const supabasePublicClient=supabase.createClient("https://vrguayypljtcouzusomj.supabase.co","eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZyZ3VheXlwbGp0Y291enVzb21qIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzA3MjYyMjgsImV4cCI6MjA0NjMwMjIyOH0.b0Dk8Ne8cdrKopCkE980e9KZwvTpHXeaJ8RlQ-LP568")
+const supabasePublicClient=supabase.createClient("url","key")
 
 // Função para obter os dados do usuário e atualizar o site
 async function updateUserSite() {
@@ -95,4 +95,5 @@ async function updateUserSite() {
 }
 
 // Chamar a função para atualizar o site
+
 updateUserSite();
